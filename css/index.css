@@ -520,7 +520,8 @@ footer .container p {
   font-size: 13px;
 }
 
-footer .container p span {
-  color: var(--main-color)
+footer .container p span a {
+  color: var(--main-color);
+  text-decoration: none;
 }
 /* End Footer */
