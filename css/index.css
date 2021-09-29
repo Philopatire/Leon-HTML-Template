@@ -319,6 +319,8 @@ header p {
   width: 250px;
   display: inline-block;
   box-shadow: var(--shadow);
+  height: 280px;
+  object-fit: cover;
 }
 @media (min-width: 992px) {
   .services .container .all-content .image {
@@ -436,6 +438,8 @@ header p {
   width: 250px;
   display: inline-block;
   box-shadow: var(--shadow);
+  height: 273px;
+  object-fit: cover;
 }
 .about .container .all-content .text {
   flex-basis: 415px;
