@@ -234,23 +234,23 @@ header p {
 .services {
 	padding: var(--main-padding) 100px;
 }
-.services .container .all-content {
+.services .container .content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
-.services .container .all-content .all-services {
+.services .container .content .all-services {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	justify-content: space-between;
 }
-.services .container .all-content .all-services .service {
+.services .container .content .all-services .service {
 	position: relative;
 	padding: 15px;
 	margin: 0 0 20px 20px;
 }
-.services .container .all-content .all-services .service i {
+.services .container .content .all-services .service i {
 	position: absolute;
 	color: var(--main-color);
 	font-size: 35px;
@@ -258,18 +258,18 @@ header p {
 	top: 0;
 	left: 0;
 }
-.services .container .all-content .all-services .service .text {
+.services .container .content .all-services .service .text {
 	padding: 0 2px 0 40px;
 }
-.services .container .all-content .all-services .service .text h4 {
+.services .container .content .all-services .service .text h4 {
 	margin: -15px 0 15px;
 }
-.services .container .all-content .image {
+.services .container .content .image {
 	display: none;
 	right: 0;
 	position: relative;
 }
-.services .container .all-content .image::before {
+.services .container .content .image::before {
 	content: "";
 	position: absolute;
 	background-color: var(--color-two);
@@ -279,17 +279,17 @@ header p {
 	top: -48px;
 	z-index: -1;
 }
-.services .container .all-content .image img {
+.services .container .content .image img {
 	width: 250px;
 	box-shadow: var(--shadow);
 	height: 280px;
 	object-fit: cover;
 }
 @media (min-width: 992px) {
-	.services .container .all-content .image {
+	.services .container .content .image {
 		display: inline-block;
 	}
-	.services .container .all-content .all-services {
+	.services .container .content .all-services {
 		max-width: 600px;
 	}
 }
@@ -299,38 +299,38 @@ header p {
 	background-color: var(--color-three);
 	padding: var(--main-padding);
 }
-.portfolio .container .all-content .all-port {
+.portfolio .container .content .all-port {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	gap: 20px;
 	margin-bottom: 40px;
 }
-.portfolio .container .all-content .all-port .port {
+.portfolio .container .content .all-port .port {
 	display: none;
 }
-.portfolio .container .all-content .all-port .port.active {
+.portfolio .container .content .all-port .port.active {
 	display: inline-block;
 }
-.portfolio .container .all-content .all-port .port img {
+.portfolio .container .content .all-port .port img {
 	width: 100%;
 	object-fit: cover;
 	transition: .5s;
 }
-.portfolio .container .all-content .all-port .port img:hover {
+.portfolio .container .content .all-port .port img:hover {
 	filter: grayscale(100%);
 }
-.portfolio .container .all-content .all-port .port .caption {
+.portfolio .container .content .all-port .port .caption {
 	width: 100%;
 	padding: 15px;
 	background-color: #fff;
 }
-.portfolio .container .all-content .all-port .port .caption h4 {
+.portfolio .container .content .all-port .port .caption h4 {
 	margin-bottom: 10px;
 }
-.portfolio .container .all-content .all-port .port .caption p {
+.portfolio .container .content .all-port .port .caption p {
 	margin: 0;
 }
-.portfolio .container .all-content button {
+.portfolio .container .content button {
 	cursor: pointer;
 	border: 1px solid #000;
 	margin: 0 auto 0;
@@ -344,7 +344,7 @@ header p {
 	background-color: transparent;
 	transition: 0.3s;
 }
-.portfolio .container .all-content button:hover {
+.portfolio .container .content button:hover {
 	color: white;
 	background-color: var(--color-two);
 }
@@ -353,17 +353,17 @@ header p {
 .about {
 	padding: var(--main-padding);
 }
-.about .container .all-content {
+.about .container .content {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 30px;
 	flex-wrap: wrap;
 }
-.about .container .all-content .image {
+.about .container .content .image {
 	position: relative;
 	width: 250px;
 }
-.about .container .all-content .image::before {
+.about .container .content .image::before {
 	content: "";
 	position: absolute;
 	background-color: var(--color-three);
@@ -373,7 +373,7 @@ header p {
 	top: -40px;
 	z-index: -1;
 }
-.about .container .all-content .image::after {
+.about .container .content .image::after {
 	content: "";
 	position: absolute;
 	border: 70px solid var(--main-color);
@@ -385,21 +385,21 @@ header p {
 	top: -35px;
 	z-index: -1;
 }
-.about .container .all-content .image img {
+.about .container .content .image img {
 	width: 250px;
 	box-shadow: var(--shadow);
 	height: 273px;
 	object-fit: cover;
 }
-.about .container .all-content .text {
+.about .container .content .text {
 	flex-basis: 415px;
 }
-.about .container .all-content .text p:first-child {
+.about .container .content .text p:first-child {
 	font-weight: 700;
 	font-size: 15px;
 	margin-bottom: 15px;
 }
-.about .container .all-content .text hr {
+.about .container .content .text hr {
 	width: 50%;
 	border-color: var(--main-color);
 	margin-left: 0;
@@ -407,25 +407,25 @@ header p {
 	margin-bottom: 15px;
 }
 @media (max-width: 992px) {
-	.about .container .all-content {
+	.about .container .content {
 		display: flex;
 		justify-content: center;
 	}
-	.about .container .all-content .text {
+	.about .container .content .text {
 		width: 100%;
 		top: 300px;
 		text-align: center;
 		flex-basis: initial;
 	}
-	.about .container .all-content .text hr {
+	.about .container .content .text hr {
 		margin-right: auto;
 		margin-left: auto;
 	}
-	.about .container .all-content .image::before,
-	.about .container .all-content .image::after {
+	.about .container .content .image::before,
+	.about .container .content .image::after {
 		display: none;
 	}
-	.about .container .all-content .image {
+	.about .container .content .image {
 		margin-bottom: 25px;
 	}
 }
@@ -435,21 +435,21 @@ header p {
 	padding: var(--main-padding);
 	background-color: var(--color-three);
 }
-.contact .all-content {
+.contact .content {
 	text-align: center;
 }
-.contact .all-content h2 {
+.contact .content h2 {
 	color: var(--color-two);
 	font-size: 30px;
 	margin-bottom: 15px;
 }
-.contact .all-content a {
+.contact .content a {
 	color: var(--main-color);
 	font-weight: 800;
 	font-size: 30px;
 }
 @media (max-width: 768px) {
-	.contact .all-content a {
+	.contact .content a {
 		font-size: 20px;
 	}
 }

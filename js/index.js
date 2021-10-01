@@ -26,9 +26,9 @@
 // Portfolio
 {
 	let picShowed = 3;
-	let posts = document.querySelectorAll('.portfolio .container .all-content .all-port .port');
+	let posts = document.querySelectorAll('.portfolio .container .content .all-port .port');
 	let interval = 3;
-	let btn = document.querySelector('.portfolio .container .all-content button');
+	let btn = document.querySelector('.portfolio .container .content button');
 	btn.addEventListener('click', () => {
 		if (picShowed < posts.length) showMore();
 		else showLess();
