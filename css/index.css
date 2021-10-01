@@ -43,7 +43,6 @@
 	}
 }
 /* End Components */
-
 /* Global Rules */
 * {
 	box-sizing: border-box;
@@ -86,7 +85,6 @@ span {
 	}
 }
 /* End Global Rules */
-
 /* Menu */
 .menu {
 	position: absolute;
@@ -133,8 +131,7 @@ span {
 	color: var(--main-color);
 }
 /* End Menu */
-
-/* Nav Bar */
+/* Navbar */
 nav {
 	height: 65px;
 	width: 100%;
@@ -174,8 +171,7 @@ nav .container .icon span:nth-child(2) {
 nav .container .icon:hover span:nth-child(2) {
 	width: 100%;
 }
-/* End Nav Bar */
-
+/* End Navbar */
 /* Header */
 header {
 	background-image: url(../imgs/header/background.jpg);
@@ -205,7 +201,6 @@ header p {
 	font-size: 13px;
 }
 /* End Header */
-
 /* Features */
 .features {
 	background-color: var(--color-three);
@@ -235,7 +230,6 @@ header p {
 	font-weight: 700;
 }
 /* End Features */
-
 /* Services */
 .services {
 	padding: var(--main-padding) 100px;
@@ -300,7 +294,6 @@ header p {
 	}
 }
 /* End Services */
-
 /* Portfolio */
 .portfolio {
 	background-color: var(--color-three);
@@ -310,11 +303,10 @@ header p {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	gap: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .portfolio .container .all-content .all-port .port img {
 	width: 100%;
-	height: 70%;
 	object-fit: cover;
 	transition: .5s;
 }
@@ -335,7 +327,7 @@ header p {
 .portfolio .container .all-content button {
 	cursor: pointer;
 	border: 1px solid #000;
-	margin: 0 auto;
+	margin: 0 auto 0;
 	width: max-content;
 	display: block;
 	position: relative;
@@ -351,10 +343,9 @@ header p {
 	background-color: var(--color-two);
 }
 /* End Portfolio */
-
 /* About */
 .about {
-	padding-bottom: 40px;
+	padding: var(--main-padding);
 }
 .about .container .all-content {
 	display: flex;
@@ -379,26 +370,17 @@ header p {
 .about .container .all-content .image::after {
 	content: "";
 	position: absolute;
-	background-color: var(--main-color);
-	width: 60px;
-	height: 225px;
-	right: -20px;
-	top: -20px;
-	z-index: -1;
-}
-.about .container .all-content .image .new-bar {
-	content: "";
-	position: absolute;
-	background-color: var(--main-color);
-	width: 100px;
-	height: 50px;
-	left: 245px;
-	top: 160px;
+	border: 70px solid var(--main-color);
+	border-top: none;
+	border-right: none;
+	right: -110px;
+	height: 185px;
+	width: 80px;
+	top: -35px;
 	z-index: -1;
 }
 .about .container .all-content .image img {
 	width: 250px;
-	display: inline-block;
 	box-shadow: var(--shadow);
 	height: 273px;
 	object-fit: cover;
@@ -409,13 +391,14 @@ header p {
 .about .container .all-content .text p:first-child {
 	font-weight: 700;
 	font-size: 15px;
-	line-height: 1.8;
+	margin-bottom: 15px;
 }
 .about .container .all-content .text hr {
 	width: 50%;
 	border-color: var(--main-color);
 	margin-left: 0;
 	background-color: var(--main-color);
+	margin-bottom: 15px;
 }
 @media (max-width: 992px) {
 	.about .container .all-content {
@@ -426,25 +409,24 @@ header p {
 		width: 100%;
 		top: 300px;
 		text-align: center;
-		right: initial;
-	}
-	.about .container.all-content .text {
-		left: initial;
+		flex-basis: initial;
 	}
 	.about .container .all-content .text hr {
+		margin-right: auto;
 		margin-left: auto;
 	}
 	.about .container .all-content .image::before,
-	.about .container .all-content .image::after,
-	.about .container .all-content .image .new-bar {
+	.about .container .all-content .image::after {
 		display: none;
+	}
+	.about .container .all-content .image {
+		margin-bottom: 25px;
 	}
 }
 /* End About */
-
 /* Contact */
 .contact {
-	padding: 40px;
+	padding: var(--main-padding);
 	background-color: var(--color-three);
 }
 .contact .all-content {
@@ -452,8 +434,8 @@ header p {
 }
 .contact .all-content h2 {
 	color: var(--color-two);
-	font-weight: 800;
 	font-size: 30px;
+	margin-bottom: 15px;
 }
 .contact .all-content a {
 	color: var(--main-color);
@@ -470,13 +452,13 @@ header p {
 footer {
 	background-color: var(--color-two);
 	padding: 10px 30px;
+	height: 60px;
 }
 footer .container {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0;
 }
 footer .container p {
 	color: white;
@@ -484,9 +466,7 @@ footer .container p {
 	margin-right: 5px;
 	font-size: 13px;
 }
-
 footer .container p span a {
 	color: var(--main-color);
-	text-decoration: none;
 }
 /* End Footer */
