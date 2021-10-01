@@ -3,23 +3,21 @@
   let outerBtn = document.querySelector("nav .container .icon"),
       innerBtn = document.querySelector(".menu .button"),
       menu = document.querySelector(".menu"),
-      opacity = document.querySelector(".opacity"),
+      pageHolder = document.querySelector(".page-holder"),
       allClicks = document.querySelectorAll(".menu ul li a")
 
   outerBtn.addEventListener("click", () => {
-
-      opacity.style.opacity = .12;
-      menu.style.right = 0;
-      for (let i = 0; i < allClicks.length ;i++){
-        allClicks[i].addEventListener("click", () => {
-          menu.style.right = -300 + "px"
-          opacity.style.opacity = 1
-        })
-      }
+    pageHolder.classList.add("active")
+    menu.style.right = 0;
+    for (let i = 0; i < allClicks.length ;i++){
+      allClicks[i].addEventListener("click", () => {
+        menu.style.right = -300 + "px"
+        opacity.style.opacity = 1
+      })
+    }
   })
-
   innerBtn.addEventListener("click", () => {
-    opacity.style.opacity = 1
+    pageHolder.classList.remove("active")
     menu.style.right = -300 + "px";
   })
 }
