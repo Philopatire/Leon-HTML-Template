@@ -305,6 +305,12 @@ header p {
 	gap: 20px;
 	margin-bottom: 40px;
 }
+.portfolio .container .all-content .all-port .port {
+	display: none;
+}
+.portfolio .container .all-content .all-port .port.active {
+	display: inline-block;
+}
 .portfolio .container .all-content .all-port .port img {
 	width: 100%;
 	object-fit: cover;
